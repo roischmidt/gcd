@@ -47,6 +47,10 @@ public class GCDController implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        if (args.length == 0) {
+            logger.error("Input file not provided. Shutting down");
+            return;
+        }
         processCustomers(args[0]);
     }
 }

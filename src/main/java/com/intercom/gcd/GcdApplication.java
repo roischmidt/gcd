@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Main class
+ * Main class, only handles Spring initializations. App main class is GCDController
  */
 @SpringBootApplication
 public class GcdApplication {
